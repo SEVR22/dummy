@@ -1,28 +1,42 @@
-# Dummy Project
+# Sistema de Seguridad Nacional - El Salvador
 
-Project description goes here.
+Aplicación web para reportes ciudadanos de incidentes de seguridad con integración de autoridades.
 
-## Getting Started
+## Estructura del Proyecto
 
-Instructions for setting up and running the project.
-
-## Installation
-
-```bash
-# Add installation steps here
+```
+hackaton-seguridad-sv/
+├── backend/          # API FastAPI
+├── frontend/         # React App
+└── docs/            # Documentación
 ```
 
-## Usage
+## Tecnologías
 
+- **Backend:** FastAPI + SQLAlchemy + PostgreSQL + PostGIS
+- **Frontend:** React + TypeScript + Leaflet Maps
+- **Base de datos:** PostgreSQL con extensión PostGIS
+
+## Instalación y Configuración
+
+### Backend
 ```bash
-# Add usage examples here
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
 ```
 
-## Contributing
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Funcionalidades Principales
 
-## License
-
-This project is licensed under the MIT License.
-
+- 📍 Reportes ciudadanos geolocalizados
+- 🚨 Notificaciones en tiempo real
+- 👮 Dashboards para autoridades
+- 👥 Sistema de amigos y seguimiento
+- 📊 Análisis y estadísticas de seguridad

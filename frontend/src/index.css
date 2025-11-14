@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos personalizados para el mapa */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para marcadores personalizados */
+.incident-marker {
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.incident-marker.assault {
+  background-color: #ef4444;
+}
+
+.incident-marker.robbery {
+  background-color: #f97316;
+}
+
+.incident-marker.homicide {
+  background-color: #dc2626;
+}
+
+.incident-marker.accident {
+  background-color: #eab308;
+}
+
+.incident-marker.fire {
+  background-color: #f59e0b;
+}
+
+.incident-marker.natural-disaster {
+  background-color: #8b5cf6;
+}
+
+.incident-marker.suspicious-activity {
+  background-color: #6b7280;
+}
+
+.incident-marker.other {
+  background-color: #64748b;
+}
